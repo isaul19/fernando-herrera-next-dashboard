@@ -1,4 +1,4 @@
-import { Calculator, Calendar, SunIcon } from "lucide-react";
+import { Calculator, Calendar, Circle, SunIcon } from "lucide-react";
 import Image from "next/image";
 import { SidebarMenuItem } from "./SidebarMenuItem";
 
@@ -15,13 +15,19 @@ const menuItems = [
     title: "Counter",
     subtitle: "Contador Client Side",
   },
+  {
+    href: "/dashboard/pokemons",
+    icon: <Circle />,
+    title: "Pokemons",
+    subtitle: "Generación Estática",
+  },
 ];
 
 export const Sidebar = () => {
   return (
     <div
       id="menu"
-      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 h-screen overflow-y-scroll"
+      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64"
       style={{ width: "400px" }}
     >
       <div id="logo" className="my-4 px-6 ">

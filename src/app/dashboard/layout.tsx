@@ -10,7 +10,7 @@ export default function DashboardLayout({ children }: Props) {
       <div className="flex">
         <Sidebar />
 
-        <div className="text-slate-900 w-full p-2">{children}</div>
+        <div className="text-slate-900 w-full">{children}</div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ const urlBase =
 
 export const PokemonCard = ({ pokemon }: Props) => {
   return (
-    <Link href={`/dashboard/pokemons/${pokemon.id}`} className="mx-auto right-0 mt-2 w-60">
+    <Link href={`/dashboard/pokemons/${pokemon.name}`} className="mx-auto right-0 mt-2 w-60">
       <article className="bg-white rounded overflow-hidden shadow-lg">
         <div className="p-6 bg-gray-800 border-b flex flex-col justify-center items-center">
           <Image

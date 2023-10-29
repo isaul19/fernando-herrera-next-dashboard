@@ -1,4 +1,4 @@
-import { Calculator, Calendar, Circle, SunIcon } from "lucide-react";
+import { Calculator, Calendar, Circle, Heart, SunIcon } from "lucide-react";
 import Image from "next/image";
 import { SidebarMenuItem } from "./SidebarMenuItem";
 
@@ -20,6 +20,12 @@ const menuItems = [
     icon: <Circle />,
     title: "Pokemons",
     subtitle: "Generación Estática",
+  },
+  {
+    href: "/dashboard/favorites",
+    icon: <Heart />,
+    title: "Favorites",
+    subtitle: "Global state",
   },
 ];
 
